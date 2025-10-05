@@ -4,30 +4,54 @@
 
 /* 输入法背景色 */
 .popup-menu-content.kimpanel-popup-content {
-    border-radius: 16px;
-    background-color:#272424;
-    padding: 7px;
-    border: 0;
+    border-radius: 13px;
+    background-color: #303030;
+    padding: 0;
 }
 
 .kimpanel-label {
     font-family:sans;
     font-weight:normal;
-    padding: 10px;
+    padding: 0.4em;
     color: #efefef;
 }
 
 .kimpanel-candidate-item {
     cursor: pointer;
     transition-duration: 0ms;
+    padding: 15px;
 }
 
 .kimpanel-candidate-item:hover {
+    border-radius: 0;
+}
+
+.kimpanel-candidate-item:hover:first-child {
+    border-radius: 13px 13px 0 0;
+}
+
+.kimpanel-candidate-item:hover:last-child {
+    border-radius: 0 0 13px 13px;
+}
+
+.kimpanel-candidate-item:hover:last-child:first-child {
     border-radius: 13px;
 }
 
 .kimpanel-candidate-item:active {
     background-color: #3584e4;
+    border-radius: 0;
+}
+
+.kimpanel-candidate-item:active:first-child {
+    border-radius: 13px 13px 0 0;
+}
+
+.kimpanel-candidate-item:active:last-child {
+    border-radius: 0 0 13px 13px;
+}
+
+.kimpanel-candidate-item:active:last-child:first-child {
     border-radius: 13px;
 }
 
